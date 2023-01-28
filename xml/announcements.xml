@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<announcementsStatusContent xmlns:xsi="http://w3.org.com/2001/XMLSchema-instance" xmlns:xsd="http://w3.org.com/2001/XMLSchema">
+<announcementsStatusdata>
+<announcementsStatustype>
+<image>announcement.png</image>
+<title>Announcements</title>
+<description>An eye exam can detect more than just vision problems. Find out more in the AARP Eye Center</description>
+<carosel></carosel>
+</announcementsStatustype>
+</announcementsStatusdata>
+</announcementsStatusContent>

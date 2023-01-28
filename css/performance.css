@@ -1,0 +1,53 @@
+#performanceheading {
+    font-weight: 600;
+    font-size: 19px;
+    border-left: 4px solid rgb(241, 29, 29);
+    display: inline-block;
+    line-height: 20px;
+    height: 35px;
+    margin-top: 20px;
+    padding: 0 10px;
+}
+
+.performance-sum {
+    display: flex;
+}
+
+.performanceTitles {
+    float: right;
+    margin: 0px;
+}
+
+.btn-lg {
+    padding: 5px;
+    font-size: 14px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+}
+
+.Views {
+    margin-top: 3px;
+    margin-left: 80px;
+    color: blue;
+    cursor: pointer;
+}
+
+
+/* 
+.per-title {
+    float: right;
+} */
+
+.modal-dialog {
+    width: 100%;
+}
+
+#example_previous,
+#example_next {
+    /* background-color: #f1f1f1; */
+    color: black;
+    font-size: 14px;
+    text-align: center;
+    /* border: chartreuse; */
+    border: none;
+}

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard 6</title>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/dataTables.material.min.css" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="https://fullcalendar.io/js/fullcalendar-2.4.0/fullcalendar.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link href="css/jquary-datatable.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/dtButton.min.css">
+
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/announcements.css">
+    <link rel="stylesheet" href="css/image.css">
+    <link rel="stylesheet" href="css/trainingStatus.css">
+    <link rel="stylesheet" href="css/mytraining.css">
+    <link rel="stylesheet" href="css/current.css">
+    <link rel="stylesheet" href="css/performance.css">
+    <link rel="stylesheet" href="css/calendar.css">
+    <link rel="stylesheet" href="css/teamtrainingprogress.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/dataTables.material.min.css" />
+
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- Announcements------------------------------------------------------- -->
+        <div class="Announcements pad-null col-md-12 col-sm-12 col-xs-12"></div>
+
+        <!--Main Image -------------------------------------------------------------->
+        <div class="Image pad-null col-md-12 col-sm-12 col-xs-12"></div>
+
+        <!-- Training status--------------------------------------------------------------- -->
+        <div class="Training col-md-12 col-sm-12 col-xm-12 pad-null" id="training"> </div>
+
+
+        <!--mytraining  pie chart first block(MY TRAINING SUMMARY)  ------------------------------------------------------------------------>
+
+
+        <div class="col-md-4 col-sm-6 col-xs-12 " id="mytraining">
+            <div class="panel  fa-fa">
+                <div class="panel-heading " id="myTrainingheading"></div>
+                <div class="panel-body pad-null" id="myTrainingbody"></div>
+                <!--Div that will hold the pie chart-->
+                <div id="chart_div"></div>
+            </div>
+        </div>
+
+
+        <!-- current  bar chart    second block (CURRENT ASSIGNMENT)-->
+
+        <div class="col-md-4 col-sm-12 col-xs-12 " id="current">
+            <div class="panel  fa-fa">
+                <div class="panel-heading" id="currentpanelheading"></div>
+                <div class="panel-body" id="currentpanelbody"></div>
+                <!--Div that will hold the bar chart-->
+                <div id="columnchart_values"></div>
+            </div>
+        </div>
+
+
+
+
+
+        <!-- performance donut chart last block(PERFORMANCE SUMMARY)-------------------------------------------- -->
+
+        <div class="col-md-4 col-sm-6 col-xs-12 " id="performance">
+            <div class="panel  fa-fa">
+                <div class="panel-heading col-md-12 " id="performanceheading">
+
+                </div>
+                <div class="panel-body pad-null" id="performancebody"></div>
+                <!--Div that will hold the donut chart-->
+                <div id="donutchart"></div>
+            </div>
+        </div>
+
+
+        <div class="container ">
+            <!-- <h2>Basic Modal Example</h2> -->
+            <!-- Trigger the modal with a button -->
+            <!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button> -->
+
+            <!-- Modal -->
+            <div class="modal fade " id="myModal" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content ">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Summary</h4>
+                        </div>
+
+
+
+
+
+                        <div class="modal-body ">
+
+
+                            <table id="example" class="mdl-data-table col-md-12 col-sm-12">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Position</th>
+                                        <th>Office</th>
+                                        <th>Age</th>
+                                        <th>Start date</th>
+                                        <th>Salary</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Tiger Nixon</td>
+                                        <td>System Architect</td>
+                                        <td>Edinburgh</td>
+                                        <td>61</td>
+                                        <td>2011/04/25</td>
+                                        <td>$320,800</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Garrett Winters</td>
+                                        <td>Accountant</td>
+                                        <td>Tokyo</td>
+                                        <td>63</td>
+                                        <td>2011/07/25</td>
+                                        <td>$170,750</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ashton Cox</td>
+                                        <td>Junior Technical Author</td>
+                                        <td>San Francisco</td>
+                                        <td>66</td>
+                                        <td>2009/01/12</td>
+                                        <td>$86,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cedric Kelly</td>
+                                        <td>Senior Javascript Developer</td>
+                                        <td>Edinburgh</td>
+                                        <td>22</td>
+                                        <td>2012/03/29</td>
+                                        <td>$433,060</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Airi Satou</td>
+                                        <td>Accountant</td>
+                                        <td>Tokyo</td>
+                                        <td>33</td>
+                                        <td>2008/11/28</td>
+                                        <td>$162,700</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Brielle Williamson</td>
+                                        <td>Integration Specialist</td>
+                                        <td>New York</td>
+                                        <td>61</td>
+                                        <td>2012/12/02</td>
+                                        <td>$372,000</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Jonas Alexander</td>
+                                        <td>Developer</td>
+                                        <td>San Francisco</td>
+                                        <td>30</td>
+                                        <td>2010/07/14</td>
+                                        <td>$86,500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Shad Decker</td>
+                                        <td>Regional Director</td>
+                                        <td>Edinburgh</td>
+                                        <td>51</td>
+                                        <td>2008/11/13</td>
+                                        <td>$183,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Michael Bruce</td>
+                                        <td>Javascript Developer</td>
+                                        <td>Singapore</td>
+                                        <td>29</td>
+                                        <td>2011/06/27</td>
+                                        <td>$183,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Donna Snider</td>
+                                        <td>Customer Support</td>
+                                        <td>New York</td>
+                                        <td>27</td>
+                                        <td>2011/01/25</td>
+                                        <td>$112,000</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Position</th>
+                                        <th>Office</th>
+                                        <th>Age</th>
+                                        <th>Start date</th>
+                                        <th>Salary</th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    </div>
+
+
+
+    <!-- team training progress----------------------------------------------------------- -->
+
+
+    <div class="col-md-6 col-sm-12 col-xs-12 " id="teamprogress">
+        <div class="panel  fa-fa">
+            <div class="panel-heading " id="teamprogressheading"></div>
+            <div class="panel-body pad-null" id="teamprogressbody"></div>
+            <!--Div that will hold the donut chart-->
+            <!-- <div id='calar'></div> -->
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- claendar----------------------------------------------------------- -->
+
+
+    <div class="col-md-6 col-sm-6 col-xs-12 " id="Calendar">
+        <div class="panel  fa-fa">
+            <div class="panel-heading " id="Calendarheading"></div>
+            <div class="panel-body pad-null" id="Calendarbody"></div>
+            <!--Div that will hold the donut chart-->
+            <div id='calendar'></div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+    <script src="scripts/jquery-1.10.2.min.js"></script>
+    <script src="scripts/jquery-ui.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+
+
+    <!-- for table data dynamic data -->
+
+    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/dataTables.material.min.js"></script>
+
+    <script src="scripts/dataTables.buttons.min.js"></script>
+    <script src="scripts/buttons.html5.min.js"></script>
+    <script src="scripts/buttons.flash.min.js"></script>
+    <script src="scripts/jszip.min.js"></script>
+
+
+    <!-- google chart open -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <!-- google chart close -->
+
+
+
+
+    <!-- full calendar open -->
+    <script src="https://fullcalendar.io/js/fullcalendar-2.4.0/lib/moment.min.js"></script>
+    <script src="https://fullcalendar.io/js/fullcalendar-2.4.0/fullcalendar.min.js"></script>
+    <!--  full calendar  close -->
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+
+    <script src="scripts/main.js" id="customJs"></script>
+
+    <script src="scripts/announcements.js"></script>
+    <script src="scripts/image.js"></script>
+    <script src="scripts/trainingStatus.js"></script>
+    <script src="scripts/mytraining.js"></script>
+    <script src="scripts/current.js"></script>
+    <script src="scripts/performance.js"></script>
+    <script src="scripts/calendar.js"></script>
+    <script src="scripts/datatable.js"></script>
+    <script src="scripts/teamtrainingprogress.js"></script>
+
+
+</body>
+
+</html>

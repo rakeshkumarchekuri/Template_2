@@ -1,0 +1,19 @@
+#Calendarheading {
+    font-weight: 600;
+    font-size: 19px;
+    border-left: 4px solid rgb(241, 29, 29);
+    display: inline-block;
+    line-height: 20px;
+    color: black;
+    height: 35px;
+    margin-top: 20px;
+    padding: 0 10px;
+}
+
+.fc .fc-toolbar>*> :first-child {
+    margin-left: 0;
+    border: none;
+    background: white;
+    /* float: left; */
+    /* margin-left: 188px; */
+}

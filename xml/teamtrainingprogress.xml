@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<progressContent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <progressTitles>Team Training Progress</progressTitles>
+     <progressImg>Icon.png</progressImg>
+          <progressViews>Caroline Herschel</progressViews>
+
+    <progressData>
+        <progressType>
+
+            <picture>Icon.png</picture>
+            <imageName>Jane Goodall</imageName>
+
+            <training>TRAINING</training>
+
+            <completed>Completed</completed>
+            <completedNumber>12</completedNumber>
+
+            <inProgress>In progress</inProgress>
+             <inProgressNumber>45</inProgressNumber>
+
+            <registered>Registered</registered>
+            <registeredNumber>23</registeredNumber>
+
+              <assigned>ASSIGNED</assigned>
+
+            <complete>Completed</complete>
+            <completeNumber>12</completeNumber>
+
+            <inProgres>In progress</inProgres>
+             <inProgresNumber>45</inProgresNumber>
+
+            <overdue>OVERDUE</overdue>
+            <overdueNumber>8</overdueNumber>
+        </progressType>
+    </progressData>
+
+
+
+    <progressData>
+        <progressType>
+
+            <picture>Icon.png</picture>
+            <imageName>Dustin Hulse</imageName>
+
+            <training>TRAINING</training>
+
+            <completed>Completed</completed>
+            <completedNumber>12</completedNumber>
+
+            <inProgress>In progress</inProgress>
+             <inProgressNumber>45</inProgressNumber>
+
+            <registered>Registered</registered>
+            <registeredNumber>23</registeredNumber>
+
+              <assigned>ASSIGNED</assigned>
+
+            <complete>Completed</complete>
+            <completeNumber>12</completeNumber>
+
+            <inProgres>In progress</inProgres>
+             <inProgresNumber>45</inProgresNumber>
+
+            <overdue>OVERDUE</overdue>
+            <overdueNumber>8</overdueNumber>
+        </progressType>
+    </progressData>
+
+
+
+    
+    <progressData>
+        <progressType>
+
+            <picture>Icon.png</picture>
+            <imageName>Ayesha Mixon</imageName>
+
+            <training>TRAINING</training>
+
+            <completed>Completed</completed>
+            <completedNumber>12</completedNumber>
+
+            <inProgress>In progress</inProgress>
+             <inProgressNumber>45</inProgressNumber>
+
+            <registered>Registered</registered>
+            <registeredNumber>23</registeredNumber>
+
+              <assigned>ASSIGNED</assigned>
+
+            <complete>Completed</complete>
+            <completeNumber>12</completeNumber>
+
+            <inProgres>In progress</inProgres>
+             <inProgresNumber>45</inProgresNumber>
+
+            <overdue>OVERDUE</overdue>
+            <overdueNumber>8</overdueNumber>
+        </progressType>
+    </progressData>
+
+
+
+    <progressData>
+        <progressType>
+
+            <picture>Icon.png</picture>
+            <imageName>Kenneth Hernandez</imageName>
+            
+            <training>TRAINING</training>
+
+            <completed>Completed</completed>
+            <completedNumber>12</completedNumber>
+
+            <inProgress>In progress</inProgress>
+             <inProgressNumber>45</inProgressNumber>
+
+            <registered>Registered</registered>
+            <registeredNumber>23</registeredNumber>
+
+              <assigned>ASSIGNED</assigned>
+
+            <complete>Completed</complete>
+            <completeNumber>12</completeNumber>
+
+            <inProgres>In progress</inProgres>
+             <inProgresNumber>45</inProgresNumber>
+
+            <overdue>OVERDUE</overdue>
+            <overdueNumber>8</overdueNumber>
+        </progressType>
+    </progressData>
+
+
+
+</progressContent>

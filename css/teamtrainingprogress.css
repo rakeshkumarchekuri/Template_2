@@ -1,0 +1,11 @@
+#teamprogressheading {
+    font-weight: 600;
+    font-size: 19px;
+    border-left: 4px solid rgb(241, 29, 29);
+    display: inline-block;
+    line-height: 20px;
+    height: 35px;
+    margin-top: 20px;
+    padding: 0 10px;
+    margin-bottom: 80px;
+}

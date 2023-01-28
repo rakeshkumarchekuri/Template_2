@@ -1,0 +1,29 @@
+.contents {
+    color: rgb(23, 24, 22) !important;
+    text-align: left;
+    /* line-height: 55px; */
+    font-size: 17px !important;
+    margin-top: 38px;
+}
+
+.result {
+    color: rgb(0, 0, 0);
+    text-align: left;
+}
+
+#blooks {
+    background-color: #b88a75;
+    border: 1px solid white;
+    display: flex;
+    position: relative;
+    height: 100px;
+}
+
+.imageIcon {
+    margin-top: 14px;
+}
+
+#training {
+    padding-left: 0px;
+    padding-right: 0px;
+}

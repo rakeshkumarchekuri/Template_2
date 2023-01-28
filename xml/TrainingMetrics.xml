@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TrainingMetricsContent xmlns:xsi="http://www.w3.org/XMLSchema-instance" xmlns:xsd="http://www.w3.org/XMLSchema">
+    <HeaderTitle>Training Metrics</HeaderTitle>
+    <Image>MyLearning-bar-no-pending-activities.png</Image>
+</TrainingMetricsContent>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TrainingContent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <trainingData>
+        <trainingType>
+              <imageIcon>Icon.png</imageIcon>
+                     <contents>LERNER APPROVALS</contents>
+
+       </trainingType>
+        <trainingType>
+
+               <imageIcon>Icon.png</imageIcon>
+             <contents>REPORTS</contents>
+
+         </trainingType>
+        <trainingType>
+
+              <imageIcon>Icon.png</imageIcon>
+             <contents>TEAM DEVELOPMENT PLAN</contents>
+
+         </trainingType>
+        <trainingType>
+             <imageIcon>Icon.png</imageIcon>
+              <contents>HELP</contents>
+
+
+
+
+        </trainingType>
+    </trainingData>
+
+</TrainingContent>

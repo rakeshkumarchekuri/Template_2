@@ -1,0 +1,43 @@
+#myTrainingheading {
+    font-weight: 600;
+    font-size: 19px;
+    border-left: 4px solid rgb(241, 29, 29);
+    display: inline-block;
+    line-height: 20px;
+    height: 35px;
+    margin-top: 20px;
+    padding: 0 10px;
+}
+
+
+/* 
+#myTrainingbody {
+    height: 33px;
+} */
+
+#myTraining {
+    padding-left: 0px;
+}
+
+@media only screen and (max-width: 992px) {
+    #myTraining {
+        padding-left: 0px;
+        padding-right: 5px;
+        /* height: 56px !important; */
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    #myTrainingbody {
+        height: 56px !important;
+        /* padding: 0px; */
+    }
+}
+
+
+/* 
+@media only screen and (max-width: 768px) {
+    #myTrainingbody {
+        height: 56px !important;
+    }
+} */
